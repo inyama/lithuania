@@ -23,6 +23,8 @@ If success = false then error field contains error code and data is empty.
 
 JSON api consist of 4 main groups. Each of them has special entity formats. This formats help us to get and modify data.
 
+##Votes
+
 /votes   - provides information about votes. allows user to vote on restaurant.
 
 This part works with:
@@ -53,8 +55,9 @@ We put post and get votes in this format.
 
 /votes?userId={rId}&currentTime ={time} GET - returns all vote records for user with given userId for for currentTime time
 
-/votesStatistic - provides vote statistics. how much votes has each restaurant
+## VotesStatistic
 
+/votesStatistic - provides vote statistics. how much votes has each restaurant
 
 This part works with
 StatisticItem:
@@ -66,6 +69,8 @@ StatisticItem:
 /votesStatistic GET - returns vote statistics for today as a list of statisticItem
 
 /votesStatistic?restaurantId={rId}&currentTime={time} GET - returns vote statistics for specified time as a list of statisticItem
+
+## Users
 
 /users - provides functional for user management. helps us to create remove and update user information
 
@@ -89,6 +94,8 @@ non admin users will have null in password field
 /users/{id} PUT - allows to modify user information. only ADMIN users can do this
 
 /users/[id} DELETE - allows to delete user records. only ADMIN users can do this
+
+## Restaurants
 
 /restaurants - provides restaurant management functional.
 
