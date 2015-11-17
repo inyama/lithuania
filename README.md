@@ -1,10 +1,12 @@
-# lithuania
-This program uses basic authorisation. Each request should be with special field in http header. For example
+# Little voting system
 
-curl -H "Authorization: Basic <long encoded string>" http://localhost:8088/users" where "long encoded string"
+This is a little voting system, that helps to decide what restaurant is better. Repository contains basic integration unit tests. They show how this application works.
+
+# Technical introduction
+This service uses basic authentification for user login. Each request should be with special field in http header. For example:
+
+curl -H "Authorization: Basic 'long encoded string'" http://localhost:8088/users" where "long encoded string"
 is Base64 encoded string with username and password
-
-Repo contains basic integration unit tests.
 
 Server returns data in a special format
 
@@ -17,7 +19,9 @@ Server returns data in a special format
 If there are success=true, then error field is empty and data contains response information.
 If success = false then error field contains error code and data is empty.
 
-JSON api consist of 4 main groups. Each part has special entity formats. This formats help us to get and modify data.
+# API
+
+JSON api consist of 4 main groups. Each of them has special entity formats. This formats help us to get and modify data.
 
 /votes   - provides information about votes. allows user to vote on restaurant.
 
