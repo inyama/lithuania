@@ -4,6 +4,8 @@ This program uses basic authorisation. Each request should be with special field
 curl -H "Authorization: Basic <long encoded string>" http://localhost:8088/users" where "long encoded string"
 is Base64 encoded string with username and password
 
+Repo contains basic integration unit tests.
+
 Server returns data in a special format
 
 {
