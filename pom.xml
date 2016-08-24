@@ -112,8 +112,7 @@
             <artifactId>maven-pmd-plugin</artifactId>
             <version>3.6</version>
             <configuration>
-                     
-                <linkXRef>false</linkXRef>
+                     <failOnViolation>false</failOnViolation>
                 <targetJdk>1.8</targetJdk>
             </configuration>
         </plugin>
