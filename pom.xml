@@ -71,6 +71,10 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-pmd-plugin</artifactId>
             <version>3.6</version>
+            <configuration>
+        <targetJdk>1.8</targetJdk>
+        <verbose>true</verbose>
+    </configuration>
             <executions><execution>
                      <phase>package</phase>
                      <goals><goal>check</goal></goals></execution></executions>
