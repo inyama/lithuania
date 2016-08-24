@@ -71,7 +71,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-pmd-plugin</artifactId>
             <version>3.6</version>
-            <exectutions><execution><goals><goal>check</goal></goals></execution></exectutions>
+            <executions><execution><goals><goal>check</goal></goals></execution></executions>
 
         </plugin>
 
