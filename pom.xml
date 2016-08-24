@@ -74,6 +74,14 @@
             <configuration>
         <targetJdk>1.8</targetJdk>
         <verbose>true</verbose>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+              <goal>cpd-check</goal>
+            </goals>
+          </execution>
+        </executions>
     </configuration>
 
         </plugin>
