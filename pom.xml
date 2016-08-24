@@ -113,8 +113,11 @@
             <artifactId>maven-pmd-plugin</artifactId>
             <version>3.6</version>
             <configuration>
-                     <failOnViolation>false</failOnViolation>
                 <targetJdk>1.8</targetJdk>
+                <linkXRef>false</linkXRef>
+                <rulesets>
+                    <ruleset>/rulesets/basic.xml</ruleset>
+                </rulesets>
             </configuration>
         </plugin>
         <plugin>
