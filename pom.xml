@@ -74,6 +74,7 @@
             <configuration>
         <targetJdk>1.8</targetJdk>
         <verbose>true</verbose>
+        <failOnViolation>false</failOnViolation>
         <executions>
           <execution>
             <goals>
